@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Forecast</h1>
+            <div class="search-bar">
+                <input type="text" id="cityInput" placeholder="Enter city name">
+                <button onclick="getWeather()">Search</button>
+            </div>
+            <div class="location" id="location">Hasilpur, Pakistan</div>
+        </header>
+        <main>
+            <section class="current-weather">
+                <h2 id="temperature">28° 🌧️</h2>
+                <p id="condition">Rainy Day</p>
+                <p id="description">Today, expect a rainy day with temperatures ranging from 24°C. Make sure to bring an umbrella and dress accordingly before heading out! 🌂</p>
+                <div class="details">
+                    <div><span>Feels like</span> <span id="feelsLike">30°</span> 🌡️</div>
+                    <div><span>Precipitation</span> <span id="precipitation">2.3" in last 24h</span> 💧</div>
+                    <div><span>Humidity</span> <span id="humidity">82%</span> 💦</div>
+                    <div><span>Wind</span> <span id="wind">6 m/s</span> 💨</div>
+                </div>
+            </section>
+            <section class="hourly-forecast">
+                <h3>Hourly Forecast</h3>
+                <div class="forecast-hours" id="hourlyForecast"></div>
+            </section>
+            <section class="daily-forecast">
+                <h3>10-Day Forecast</h3>
+                <div class="forecast-days" id="dailyForecast"></div>
+            </section>
+            <section class="additional-info">
+                <div><span>UV Index</span> <span id="uvIndex">3</span> ☀️ <div class="uv-bar"></div></div>
+                <div><span>Wind</span> <span id="windSpeed">3 mph</span> 💨 <div class="wind-direction" id="windDirection">N</div></div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
